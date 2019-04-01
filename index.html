@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,900,700,500"/>
+
+    <link href="../static/style1.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="stars" id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  <div class="container-fluid">
+
+        <span class="text1" >We are the</span>
+        <span class="text2"> Calculator</span>
+      </div>
+
+        <br>
+          <div class="form-group">
+              <form method="POST" action="/" enctype=multipart/form-data>
+                <br>
+
+                <p>
+                  <input type=file name=file style="color:white" id="A2">
+                  <input type=submit class="btn btn-danger" value=Upload>
+                  <input type=text placeholder="Enter equation..." name="eq">
+                  <button type="submit" class="btn btn-warning"><a>Submit</a></button>
+                </p>
+              </form>
+        </div>
+
+    </div>
+  </div>
+    <div class="container">
+
+    <br>
+    <div class="container select-list">
+      <form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+         </table>
+      </form>
+    </div>
+<div style="height:350px"></div>
+</body>
+<footer>
+  <p id="H1" style="color:black"><small>Copyright &copy; 2019 LAhacks</small></p>
+
+</footer>
+</html>
